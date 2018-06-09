@@ -1,0 +1,22 @@
+from math import *
+
+def logr(x, y):
+    return log(x, y)
+
+def fact(num):
+    return factorial(num)
+
+def permutation(n, r):
+    if n >= r:
+        return factorial(n) / factorial(n - r)
+    else:
+        return "Invalid Syntax"
+
+def combination(n, r):
+    if n >= r:
+        return factorial(n) / (factorial(n - r) * factorial(r))
+    else:
+        return "Invalid Syntax"
+
+def power(a, b):
+    return a ** b
