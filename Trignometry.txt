@@ -1,0 +1,27 @@
+from cmath import *
+
+def trigo(x, y):
+    if x == 'sine':
+        return sin(y)
+    elif x == 'cos':
+        return cos(y)
+    elif x == 'tan':
+        return tan(y)
+    elif x == 'arcsine':
+        return asin(y)
+    elif x == 'arccos':
+        return acos(y)
+    elif x == 'arctan':
+        return atan(y)
+    elif x == 'sineh':
+        return sinh(y)
+    elif x == 'cosh':
+        return cosh(y)
+    elif x == 'tanh':
+        return tanh(y)
+    elif x == 'arcsineh':
+        return asinh(y)
+    elif x == 'arccosh':
+        return acosh(y)
+    elif x == 'arctanh':
+        return atanh(y)

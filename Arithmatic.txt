@@ -1,0 +1,11 @@
+def addition(num):
+    return sum(num)
+
+def subtraction(num):
+    return reduce(lambda x, y: x-y, num)
+
+def multiplication(num):
+    return reduce(lambda x, y: x*y, num)
+
+def division(num):
+    return reduce(lambda x, y: x/y, num)

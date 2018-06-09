@@ -1,0 +1,120 @@
+#Basic Arithmatic Functions: - Yup
+#Basic Trignometric Functions: - Yup
+#Log to the base N: - Yup
+#Factorial: - Yup
+#Permutation And Combination: - Yup
+#Number powerd to n: - Yup
+#Roots of a Equation: - Quadratic And Cubic Only And In Form a*x^2 + b*x + c = 0 and a*x^3 + b*x^2 + c*x + d = 0
+#Calculus: - Yup
+#Laplace: - Can Be Calculated Using Calculus Function
+#Fourier Transform: - Can Be Calculated Using Calculus Function
+
+from Calculus import *
+from Arithmatic import *
+from Trignometry import *
+from Log_Fact import *
+from Roots_Of_Cubic_Equations import *
+from Roots_Of_Quadratic_Equations import *
+
+a  = raw_input("Enter your Choice: - ")
+
+if a == 'add':
+    number = input("Enter numbers you want to Add in []: - ")
+    print addition(number)
+elif a == 'sub':
+    number = input("Enter numbers you want to Subtract in []: - ")
+    print subtraction(number)
+elif a == 'mul':
+    number = input("Enter numbers you want to Multiply in []: - ")
+    print multiplication(number)
+elif a == 'div':
+    number = input("Enter numbers you want to Division in []: - ")
+    print division(number)
+elif a == 'trigo':
+    c = raw_input("Enter trigo: - ")
+    print "For angle in degrees divide rad by 57.3"
+    d = input("Enter angle in rad: - ")
+    print trigo(c, d)
+elif a == 'log':
+    c = input("Enter number: - ")
+    d = input("Enter the base: -")
+    print logr(c, d)
+elif a == 'fact':
+    c = input("Enter number: - ")
+    print fact(c)
+elif a == 'per':
+    c = input("Enter number n: - ")
+    d = input("Enter r: - ")
+    print permutation(c, d)
+elif a == 'com':
+    c = input("Enter number n: - ")
+    d = input("Enter r: - ")
+    print combination(c, d)
+elif a == 'pow':
+    print "If you are entering number or power in p/q format please enter in p./q. format!!"
+    c = input("Enter number: - ")
+    d = input("Enter raise to power: - ")
+    print power(c, d)
+elif a == 'quad':
+    x = float(input('Enter a: '))
+    y = float(input('Enter b: '))
+    z = float(input('Enter c: '))
+    d = quadratic(x, y, z)
+    print d
+elif a == 'cubic':
+    w = float(input('Enter a: '))
+    x = float(input('Enter b: '))
+    y = float(input('Enter c: '))
+    z = float(input('Enter d: '))
+    print cubic(w, x, y, z)
+elif a == 'inte':
+    print "INDEFINITE INTEGRATION"
+    b = input("Enter function: - ")
+    c = input("Enter variable: - ")
+    d = integration(b, c)
+    print d
+elif a == 'dinte':
+    print "DEFINITE INTEGRATION"
+    print "Enter Variable and limits together in (variable, limits) format"
+    b = input("Enter function: - ")
+    c= input("Enter Variable and Limit: - ")
+    d = definite_integration(b, c)
+    print d
+elif a == "ddinte":
+    print "DEFINITE INTEGRATION WITH 2 VARIABLES"
+    print "Enter Variable and limits together in (variable, limits) format"
+    b = input("Enter function: - ")
+    c = input("Enter Variable and Limit for first variable: - ")
+    d = input("Enter Variable and Limit for second variable: - ")
+    e = double_definite_integration(b, c, d)
+    print e
+elif a == 'diff':
+    print "DIFFERENTIATION"
+    b = input("Enter function: - ")
+    c = input("Enter variable: - ")
+    d = differentiation(b, c)
+    print d
+elif a == 'ddiff':
+    print "DIFFERENTIATION WITH TWO VARIABLES"
+    b = input("Enter function: - ")
+    c = input("Enter variable 1: - ")
+    d = input("Enter variable 2: - ")
+    e = diffrentiation_with_x_and_y(b, c, d)
+    print e
+elif a == 'limits':
+    print "LIMITS"
+    b = input("Enter function: - ")
+    c = input("Enter variable: - ")
+    d = input("Enter tends to value: - ")
+    e = limits(b, c, d)
+    print e
+elif a == 'series':
+    print "SERIES EXPANSION"
+    b = input("Enter function: - ")
+    c = input("Enter variable: - ")
+    d = input("Enter start point of series: - ")
+    e = input("Enter end point of series: - ")
+    f = series_expansion(b, c, d, e)
+    print f
+else:
+    print "Not Available You Dumb Head!!"

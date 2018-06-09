@@ -1,0 +1,32 @@
+from sympy import *
+x, y = symbols('x y')
+init_printing(use_unicode=True)
+
+def diffrentiation_with_x_and_y(function, n, s):
+    a = diff(function, n, s)
+    return a
+
+def differentiation(function, n):
+    a = diff(function, n)
+    return a
+
+def integration(function, n):
+    a = integrate(function, n)
+    return a
+
+def definite_integration(function, limits):
+    a = integrate(function, limits)
+    return a
+
+def double_definite_integration(function, limit_x, limit_y):
+    a = integrate(function, limit_x, limit_y)
+    return a
+
+def limits(function, n, s):
+    a = limit(function, n, s)
+    b = a.doit()
+    return b
+
+def series_expansion(function, n, s, d):
+    a = function.series(n, s, d)
+    return a
